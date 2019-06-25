@@ -1,0 +1,21 @@
+<div class="container">
+  <div class="row">
+    <div class="col-xs-12">
+        <ol>
+            <li>Add a button which says "Display Details"</li>
+            <li>Add a paragraph with any content of your choice</li>
+            <li>Toggle the displaying of that paragraph with the button created in the first step</li>
+            <li>Log all button clicks in an array and ouput that array below the secret paragraph</li>
+            <li>Starting at the 5th log item, give all future log items a blue background (via ngStyle) and white color(ngClass)</li>
+        </ol>
+        <hr>
+        <button class="btn btn-primary" (click)="onClickToggleButton(logItem)">Display Details</button>
+        <p *ngIf="toggle">Learning Angular Directive</p>
+        <div *ngFor="let logItem of log; let i = index"
+        [ngStyle]="{backgroundColor: i > 4 ? 'blue' : 'white'}"
+        [ngClass]="{'whitecolor' : i > 4}">
+         {{ i }}
+        </div>
+    </div>
+  </div>
+</div>
