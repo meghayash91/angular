@@ -1,0 +1,16 @@
+<div class="container">
+    <h1 class="text-uppercase">Shopping List</h1>
+    <p class="lead">Example to illustrate the communication between components</p>
+
+    <div class="form-group">
+        <label for="itemName">Please enter item name</label>
+        <input type="text" id="itemName" name="itemName" class="form-control" [(ngModel)]="itemName">
+    </div>
+
+    <div class="form-group">
+        <label for="itemPrice">Please enter price $</label>
+        <input type="text" id="itemPrice" name="itemPrice" class="form-control" [(ngModel)]="itemPrice">
+    </div>
+          <button class="btn btn-success mr-2" (click)="onAddVegetable()">Add Vegetables</button>
+          <button class="btn" style="background-color:pink" (click)="onAddCosmetic()">Add cosmetics</button>
+</div>

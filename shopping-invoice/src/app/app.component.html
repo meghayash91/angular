@@ -1,0 +1,8 @@
+<app-invoice-input (onVegetableAdded)="onAddVegetable($event)" (onCosmeticAdded)="onAddCosmetic($event)">
+</app-invoice-input>
+
+<hr>
+
+<app-invoice-display *ngFor="let invoiceItem of invoiceItems" [invoiceItem]="invoiceItem">
+</app-invoice-display>
+
