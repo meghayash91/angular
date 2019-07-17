@@ -2,5 +2,15 @@
     manager works!
 </p>
 
-<button class="btn btn-primary" (click)="gotoHome()">Go to Home</button>
-<button class="btn btn-danger ml-2" (click)="gotoHotel()">Go to Hotel</button>
+<!-- <button class="btn btn-primary" (click)="gotoHome()">Go to Home</button>
+<button class="btn btn-danger ml-2" (click)="gotoHotel()">Go to Hotel</button> -->
+
+<p>
+    The URL values are--> ID: {{id}} and Name: {{name}}
+    <br>
+    The Query String value {{ sb }}
+    <br>
+    The Fragment is {{ fragment }}
+</p>
+
+<a [routerLink]="['/manager/200/dharan']">Reload the same page</a>
